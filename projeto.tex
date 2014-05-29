@@ -204,9 +204,9 @@ lmargin=2.5cm,rmargin=2cm,headsep=5mm,footskip=0cm}
 \vspace{1cm}
 
 \begin{flushleft}
-	Eduardo Alberto Duarte Lacerda\\
-	Orientador: Prof. Dr. Roberto Cid Fernandes\\
-	Co-orientador: Prof. Dr. Rosa M. González Delgado
+	Aluno: Eduardo Alberto Duarte Lacerda\\
+	Orientador: Roberto Cid Fernandes(Universidade Federalde Santa Catarina)\\
+	Co-orientador: Rosa M. González Delgado (Instituto de Astrofísica de Andalucía)
 \end{flushleft}
 
 \begin{center}
@@ -224,46 +224,46 @@ matemático-estatísticas em astrofísica, procuramos aplicar essa análise nos 
 tomografia PCA possam nos ajudar na identificação de padrões espaciais e espectrais para finalidades de decomposição e filtragem dos espectros.
 	
 \section{Introdução}
-Hoje temos disponível uma infinidade de informações físicas do nosso universo através dos grandes levantamentos astronômicos. Esses {\em surveys}, que
-são mapeamentos de regiões do céu utilizando telescópios com diversas tecnologias diferentes, abarcam quantidades de dados antes inimagináveis,
-servindo como base para toda a ciência em astrofísica. Nos últimos 15 anos entramos numa era de {\em mega-surveys} \citep[e.g., \SDSS, 2dFGRS, 2MASS;
-][]{York2000, Colless1999, Skrutskie2006} com milhares de publicações e descobertas. Outros ainda estão em fase de projeto \citep[LSST;
-][]{Ivezic2008} ou por terminar \citep[JPAS; ][]{Benitez2009} e participarão ativamente desse crescimento exponencial na quantidade de dados, fazendo
-com que precisemos cada vez mais de ferramentas matemáticas/estatísticas para análise dos dados. E é nessa direção que esse projeto pretende seguir.
+Hoje temos disponível uma enorme quantidade de informações sobre nosso Universo através dos grandes levantamentos astronômicos. Esses {\em surveys},
+que são mapeamentos de regiões do céu utilizando telescópios com diversas tecnologias diferentes, produziram e seguem produzindo quantidades de dados
+antes inimagináveis, servindo como base para toda a ciência em astrofísica. Nos últimos 15 anos entramos numa era de {\em mega-surveys}, iniciada com
+projetos como a \SDSS \citep{York2000}, 2dFGRS \citep{Colless1999} e 2MASS \citep{Skrutskie2006}, e que seguirá com projetos como o LSST
+\citep[LSST;][]{Ivezic2008}, JPAS [POR REF DO WHITE PAPER NO ASTROPH EM 2014]. Esse crescimento exponencial na quantidade de dados faz com que
+precisemos cada vez mais de ferramentas matemáticas/estatísticas para análise dos dados, e é nessa direção que esse projeto se enquadra.
 	
-Ferramentas mais clássicas buscam reproduzir os dados segundo algum modelo, e desse resultado extrair informações de valor físico. Um exemplo é o
-código \starlight, desenvolvido por \citet{CidFernandes2005}, que decompõe um espectro observado de uma galáxia (dados) em termos de populações
-estelares de distintas idades e metalicidades (modelos) em um processo conhecido como síntese espectral. A aplicação desse método a quase um milhão de
-espectros de galáxias do \SDSS gerou uma série de resultados \citep[e.g., ][]{Asari2007, Asari2009, CidFernandes2007, Mateus2007}. O \starlight, assim
-como várias outras ferramentas similares \citep{Panter2003, Gallazzi2005, Ocvirk2006} propõe uma pergunta bem definida (``qual a história de formação
-das populações estelares de uma dada galáxia'') e a procuram respondê-la através de parâmetros extraídos do ajuste dos dados (i.e., da síntese
-espectral). O mapeamento do espaço de observáveis em um espaço de parâmetros envolve uma série de questões matemáticas e estatísticas complexas, ou
-seja, a base do espaço é dada, e nem sempre é ortonormal, permitindo dependência entre as soluções, ou seja, multiplas soluções equivalentes. Mesmo
-assim, este método é essencialmente calcado em princípios físicos.
 
-Projetos como o {\em Calar Alto Legacy Integral Field spectroscopy Area survey\footnote{\url{http://www.caha.es/CALIFA/}}} \citep[CALIFA;
-][]{CALIFAPresent2012} recentemente estão mudando completamente a nossa maneira de pensar e interpretar as galáxias, através da Espectroscopia de
-Campo Integral (IFS - {\em Integral Field Spectroscopy}). Com os espectrógrafos de campo passamos a obter resolução espacial juntamente com espectral,
-assim resultando num conjunto de espectros, onde cada um representa uma diferentes posição em uma galáxia. O CALIFA produz cerca de 4000 espectros por
-galáxia observada transformando cada uma em uma amostra estatística {\em per se}. Com esses cubos de dados podemos então realizar a síntese espectral
-para diferentes partes da galáxia, de modo que o que era feito anteriormente para diversas galáxias possa ser feito para diferentes regiões da mesma
-galáxia. Este tipo de análise faz parte da linha de frente da ciência em Astrofísica e vem sendo realizado por pesquisadores do nosso Grupo de
+Ferramentas clássicas de análise em astrofísica buscam reproduzir os dados segundo algum modelo, e desse resultado extrair informações de valor
+físico. Um exemplo é o código \starlight, desenvolvido por \citet{CidFernandes2005}, que decompõe um espectro observado de uma galáxia (dados) em
+termos de populações estelares de distintas idades e metalicidades (modelos) em um processo conhecido como síntese espectral. A aplicação desse método
+a quase um milhão de espectros de galáxias do \SDSS gerou uma série de resultados \citep[e.g., ][]{Asari2007, Asari2009, CidFernandes2007,
+Mateus2007}. O \starlight, assim como várias outras ferramentas similares \citep{Panter2003, Gallazzi2005, Ocvirk2006} propõe uma pergunta bem
+definida (``qual a história de formação das populações estelares de uma dada galáxia'') e procura respondê-la através de parâmetros extraídos do
+ajuste dos dados (i.e., da síntese espectral). O mapeamento do espaço de observáveis em um espaço de parâmetros envolve uma série de questões
+matemáticas e estatísticas complexas. Mesmo assim, este método é essencialmente calcado em princípios físicos.
+
+Dentre os grandes {\em surveys} em andamento, projetos como o {\em Calar Alto Legacy Integral Field spectroscopy Area
+survey\footnote{\url{http://www.caha.es/CALIFA/}}} \citep[CALIFA; ][]{CALIFAPresent2012} estão mudando  a nossa maneira de pensar e interpretar as
+galáxias, através da Espectroscopia de Campo Integral (IFS - {\em Integral Field Spectroscopy}). Com os espectrógrafos de campo passamos a obter
+resolução espacial juntamente com espectral, assim resultando num conjunto de espectros, onde cada um representa uma diferentes posição em uma
+galáxia. O CALIFA produz cerca de 4000 espectros por galáxia observada transformando cada uma em uma amostra estatística {\em per se}. Com esses cubos
+de dados podemos então realizar a síntese espectral para diferentes partes da galáxia, de modo que o que era feito anteriormente para diversas
+galáxias possa ser feito para diferentes regiões da mesma galáxia. Este tipo de estudo vem sendo realizado por pesquisadores do nosso Grupo de
 Astrofísica da Universidade Federal de Santa Catarina (GAS-UFSC; André Luiz de Amorim, Natália Vale Asari, Roberto Cid Fernandes) e do Instituto de
 Astrofísica de Andalucía, na Espanha (IAA; Enrique Pérez, Rosa González Delgado, Rubén García-Benito). Aspectos técnicos e incertezas são discutidos
 em \citet{CidFernandes2013} e \citet{CidFernandes2014}, enquanto \citet{Perez2013}, e \citet{GonzalezDelgado2014} apresentam resultados astrofísicos
-dessa análise.
+dessa análise, que se enquadra dentro do perfil de ferramentas clássicas de análise discutido acima.
 
-Um método bem mais popular e tradicional nessa mesma linha é a análise de componentes principais (PCA - {\em Principal Component Analisys}). A técnica
-de PCA é simples, não-paramétrica, e nos ajuda a extrair informações de conjuntos de dados com muitas variáveis. Resumidamente, a PCA parte de uma
-tabela de $N$ linhas (objetos) por $M$ colunas (contendo propriedades observadas para cada objeto). Essa tabela forma uma base que, como comentamos
-anteriormente, nem sempre é ortonormal. Com essa tabela então partimos para um processo de ortonormalização, ou seja, encontramos uma base matemática
-que converte o conjunto de observações em um conjunto de valores que são linearmente descorrelacionado, chamados de componentes principais. Esse
-processo é feito de forma que, além de descorrelacionadas na nova base, a primeira componente tenha a máxima variância possível, e as seguintes
-componentes tem a máxima variância sob a restrição de ser ortonormal às outras, e assim por diante. Como podemos estabelecer um limite para o quanto
-queremos de informação, em variância, podemos utilizar quantas componentes principais seja necessário para atingir esse determinado limite, reduzindo
-assim dimensionalidade do problema. A tabela pode conter quaisquer tipos de dados, como cores, tamanho, dispersão de velocidade, luminosidade, etc. No
-caso de espectros de diferentes galáxias \citep[e.g., ][]{Francis1992, Sodre1994, Sodre1997}, as propriedades são as medidas de fluxo para cada
-comprimento de onda: $F_{gl} = F_g(\lambda_l)$, com $l = 1 \ldots M$ comprimentos de onda, para cada galáxia $g = 1 \ldots N$.
+Um método alternativo para estudar esses mesmos dados é a análise de componentes principais (PCA - {\em Principal Component Analisys}). A técnica de
+PCA é simples, não-paramétrica, e nos ajuda a extrair informações de conjuntos de dados com muitas variáveis. Resumidamente, a PCA parte de uma tabela
+de $N$ linhas (objetos) por $M$ colunas (contendo propriedades observadas para cada objeto). Essa tabela forma uma base que nem sempre é ortonormal.
+Com essa tabela então partimos para um processo de ortonormalização, ou seja, encontramos uma base matemática que converte o conjunto de observações
+em um conjunto de valores que são linearmente descorrelacionados, chamados de componentes principais. Esse processo é feito de forma que, além de
+descorrelacionadas na nova base, a primeira componente tenha a máxima variância possível, e as seguintes componentes tem a máxima variância sob a
+restrição de ser ortonormal às outras, e assim por diante. Como podemos estabelecer um limite para o quanto queremos de informação, em variância,
+podemos utilizar quantas componentes principais sejam necessárias para atingir esse determinado limite, reduzindo assim dimensionalidade do problema.
+A tabela pode conter quaisquer tipos de dados, como cores, tamanho, dispersão de velocidade, luminosidade, etc. No caso de espectros de diferentes
+galáxias \citep[e.g., ][]{Francis1992, Sodre1994, Sodre1997}, as propriedades são as medidas de fluxo para cada comprimento de onda: $F_{gl} =
+F_g(\lambda_l)$, com $l = 1 \ldots M$ comprimentos de onda, para cada galáxia $g = 1 \ldots N$.
 
 PCA é utilizada exaustivamente em várias áreas de conhecimento, principalmente em reconhecimento de padrões, computação visual, filtragem e
 compactação de dados \citep{Kamruzzaman2010, Borcea2012}. Podemos ver exemplos também em medicina \citep{Balakrishnan2013}. Na Astrofísica o PCA
@@ -284,11 +284,11 @@ pelo {\em Baryon Oscillation Spectroscopic Survey} \citep[BOSS;][]{Ahn2012}, atr
 \begin{figure}
 	\begin{center}
     \includegraphics[height=1.\textwidth]{figuras/K0119-compv13v14-atflux_av.pdf}
-    \caption[]{Diferenças entre valores de idade média ponderada pela luz (\meanL{\log\ t}) e extinção estelar ($A_V^\star$). {\em Painel superior}:
-    Imagem \SDSS para a galáxia NGC1167 (CALIFA 119), {\em Hubble-type}, massa em estrelas e {\em redshift}. {\em Painéis do meio}: Comparação
-    entre os valores para idade estelar média ponderada pela luz (\meanL{\log\ t}) obtidos pelo \starlight usando os cubos de dados reduzidos com a
-    versão 1.3c ({\em esquerda}) e 1.4a ({\em direita}). {\em Painéis inferiores}: O mesmo dos painéis do meio, mas para a extinção estelar
-    ($A_V^\star$)}
+    \caption[]
+    {{\em Painel superior}: Imagem \SDSS para a galáxia NGC1167 (CALIFA 119), {\em Hubble-type}, massa em estrelas e
+    {\em redshift}. {\em Painéis do meio}: Comparação entre os valores para idade estelar média ponderada pela luz (\meanL{\log\ t}) obtidos pelo
+    \starlight utilizando os cubos de dados reduzidos com a versão 1.3c ({\em esquerda}) e 1.4a ({\em direita}). {\em Painéis inferiores}: O mesmo
+    dos painéis do meio, mas para a extinção estelar ($A_V^\star$)}
     \label{fig:K0119v13v14}
     \end{center}
 \end{figure}
@@ -296,16 +296,15 @@ pelo {\em Baryon Oscillation Spectroscopic Survey} \citep[BOSS;][]{Ahn2012}, atr
 Nos dois últimos anos iníciamos uma vertente de pesquisa em nosso grupo nessa área matemático-estatística através de um projeto que já resultou em
 minha dissertação de mestrado \citep{mscthesis} e que certamente tem muito a ser explorado. Seguindo na linha de estudos de populações estelares,
 nesta dissertação procuramos correlações entre propriedades físicas advindos da síntese espectral dos cubos de dados de 8 galáxias do Projeto CALIFA
-{\em Survey} e seus respectivos tomogramas PCA \citep{Steiner2009}. Este tipo de análise foi feita, talvez, pela primeira vez em IFS de galáxias
-inteiras, mas com certeza pela primeira com os dados deste {\em survey}. Durante o tempo percorrido entre o início e o final desse trabalho de
-mestrado o Projeto CALIFA continuou evoluindo. Mais galáxias foram observadas e o {\em pipeline} de redução foi atualizado, gerando então outros novos
-cubos e novas versões dos cubos já observados anteriormente. Experimentos com a nova versão do {\em pipeline} (v1.4) mostram que os parâmetros de
-extinção são menores e as idades levemente maiores (ver Figura \ref{fig:K0119v13v14}), fatores que anteriormente culminaram em alguns resultados não
-esperados da análise PCA. Pretendemos dar sequência no estudo de padrões nas componentes principais e seus tomogramas com diferentes observáveis
-(e.g., fluxos de linhas, janelas espectrais determinadas, quocientes de linhas espectrais de emissão ou absorção) e também os produtos da síntese
-espectral (e.g., \meanL{\log\ t}, $\log\ \meanL{Z}$, $A_V$, $v_{\star}$, $\sigma_{\star}$). Aliando a tomografia PCA a outras técnicas ({\em
-wavelets}, {\em fourier}, etc.) queremos também buscar padrões espaciais nos dados, servindo para fins de filtragem e mapeamento de diferentes
-estruturas espaciais.
+{\em Survey} e seus respectivos tomogramas PCA \citep{Steiner2009}. Este foi o primeiro estudo de PCA em IFS de galáxias inteiras, além de ser o
+primeiro com os dados do CALIFA. Durante período do trabalho de mestrado o CALIFA continuou evoluindo. Mais galáxias foram observadas e o {\em
+pipeline} de redução foi atualizado, gerando então novos cubos e novas versões dos cubos anteriormente observados. Experimentos com a nova versão do
+{\em pipeline} (v1.4) mostram que os parâmetros de extinção são menores e as idades levemente maiores (ver Figura \ref{fig:K0119v13v14}), fatores que
+anteriormente culminaram em alguns resultados não esperados da análise PCA. Pretendemos dar sequência no estudo de padrões nas componentes principais
+e seus tomogramas com diferentes observáveis (e.g., fluxos de linhas, janelas espectrais determinadas, quocientes de linhas espectrais de emissão ou
+absorção) e também os produtos da síntese espectral (e.g., \meanL{\log\ t}, $\log\ \meanL{Z}$, $A_V^\star$, $v_{\star}$, $\sigma_{\star}$). Aliando a
+tomografia PCA a outras técnicas ({\em wavelets}, {\em fourier}, etc.) queremos também buscar padrões espaciais nos dados, servindo para fins de
+filtragem e mapeamento de diferentes estruturas espaciais.
 
 \begin{figure}
 	\begin{center}
@@ -325,37 +324,39 @@ padrões tanto em dimensão espectral, quanto espacial. Pretendemos:
   para diferentes tipos morfológicos, massas, etc;
   \item Análisar e comparar o efeito da aplicação da tomografia PCA nos cubos de espectros resultantes da síntese de populações estelares (espectros
   sintéticos) feita com o \starlight.
-  \item Modelar possíveis mensuráveis físicos através dessas análises não-paramétricas.
-  \item Explorar as qualidades de filtro espectral e espacial da PCA, da tomografica PCA e de diferentes técnicas ({\em wavelets}, {\em fourier},
-  distâncias em diferentes espaços, clusterização, etc.). 
+  \item Explorar a aplicação de filtros espectrais e espaciais baseados em PCA e outras técnicas ({\em wavelets}, {\em
+  fourier}, distâncias em diferentes espaços, clusterização, etc.).
 \end{itemize}
 
 \section{Metodologia}
-Através de nossa parceria com os pesquisados do IAA, na Espanha, possuimos um ambiente perfeito para a conclusão desse projeto. Descrevemos aqui nossa
-metodologia proposta para tal fim.
+Através de nossa parceria com os pesquisados do IAA, na Espanha, possuimos um ambiente perfeito para o desenvolvimento desse projeto. Descrevemos aqui
+nossa metodologia proposta para tal fim.
 
-\subsection{Projeto CALIFA Survey}
-Como descrito anteriormente, o CALIFA foi concebido para que seu legado seja abrangente, possibilitando diversos tipos de estudos em diversas áreas.
-Para esta finalidades, está observando $\sim 600$ galáxias com um campo de visão de $\sim1.3$ arcmin$^2$ em duas configurações que cobrem a janela
-espectral de 3650-7000 \AA. Dessa forma, contribui diretamente para o avanço da ciência em todas as seções que são direta e indiretamente necessárias
-para seu avanço, como técnicas computacionais e observacionais, modelos físicos e estatísticos, entre outros. Sua amostra cobre o diagrama
-cor-magnitude \ref{fig:cm-uzMz} e diversos tipos morfológicos. Existem alguns poucos {\em surveys} de IFU e todos com, além de poucos objetos e campo
-de visão menor que o CALIFA, focos de estudo mais estreitos, dificultando o legado do {\em survey} para outras pequisas científicas mais abrangentes
-\citep[SAURON;][região central de 72 galáxias com $z < 0.01$.]{de-Zeeuw2002} \citep[PINGS;][algumas galáxias muito próximas ($\sim 10$ Mpc) e o estudo
-atual de 70 (U)LIRGs com $z <0.26$]{RosalesOrtega2010} \citep[VENGA;][$30$ galáxias espirais]{Blanc2010} \citep[ATLAS\textsuperscript{3D};][260
-galáxias {\em early-type} próximas]{Cappellari2011}. Outros {\em surveys} IFU ainda estão por vir, como SAMI \citep{Croom2012} e
-MaNGA\footnote{\url{http://www.sdss3.org/future/manga.php}}. Devido a participação primordial e intensa dos pesquisadores do GAS-UFSC e dos
-pesquisadores do IAA, na Espanha, dentro do projeto CALIFA, essa parceria é o ambiente propício, com laboratórios próprios e {\em hardware}
-suficientes para o avanço de nosso projeto.
+\subsection{O projeto CALIFA}
+
+O CALIFA foi concebido para que seu legado seja abrangente, possibilitando diversos tipos de estudos em diversas áreas. Para esta finalidades, está
+observando $\sim 600$ galáxias com um campo de visão de $\sim1.3$ arcmin$^2$ em duas configurações que cobrem a janela espectral de 3650-7000 \AA. Sua
+amostra cobre o diagrama cor-magnitude (Figura \ref{fig:cm-uzMz}) e diversos tipos morfológicos. Existem alguns poucos {\em surveys} de IFU e todos
+com, além de poucos objetos e campo de visão menor que o CALIFA, focos de estudo mais estreitos, dificultando o legado do {\em survey} para pequisas
+científicas mais abrangentes \citep[SAURON;][região central de 72 galáxias com $z < 0.01$.]{de-Zeeuw2002} \citep[PINGS;][algumas galáxias muito
+próximas ($\sim 10$ Mpc) e o estudo atual de 70 (U)LIRGs com $z <0.26$]{RosalesOrtega2010} \citep[VENGA;][$30$ galáxias espirais]{Blanc2010}
+\citep[ATLAS\textsuperscript{3D};][260 galáxias {\em early-type} próximas]{Cappellari2011}. Outros {\em surveys} IFU ainda estão por vir, como SAMI
+\citep{Croom2012} e MaNGA\footnote{\url{http://www.sdss3.org/future/manga.php}}.
+
+Devido a participação direta e intensa dos pesquisadores da UFSC e do IAA dentro do projeto CALIFA, essa parceria é o ambiente propício para levar
+adiante este estudo, com laboratórios próprios e {\em hardware} suficientes para o avanço de nosso projeto. No IAA se encontram muitos pesquisadores
+participantes do Projeto CALIFA, portanto, funciona como centro físico de pesquisadores do projeto, além de contar com a pesquisadora Rosa M. González
+Delgado, uma das principais líderes do projeto que também atua como Pesquisadora Visitante do Exterior (PVE-CsF) aqui na UFSC. Rubén García Benito,
+que faz parte do grupo de redução dos dados do CALIFA, e Enrique Pérez, do grupo de populações estelares, já trabalham em nossa parceria e possuem
+domínio de técnicas exploradas por nosso projeto.
 
 \begin{figure}
 	\begin{center}
     \includegraphics[height=0.5\textwidth]{figuras/figHusemann2013Fig2.pdf}
     \caption[Diagrama cor-magnitude para as galáxias do CALIFA.]
-    {Distribui\c{c}\~ao das galáxias do CALIFA no diagrama cor magnitude $u-z$ vs. $M_z$. {\em Painel superior}: Em
-    pontos pretos est\~ao as galáxias pertencente a amostra-m\~ae e em cores as galáxias presentes no CALIFA DR1. As
-    diferentes cores representam os diferentes tipos morfológicos. {\em Painel inferior}: A fra\c{c}\~ao de galáxias
-    observadas pelo DR1 em rela\c{c}\~ao a amostra-m\~ae. Retirado de \citet{Husemann2013}.}
+    {Distribui\c{c}\~ao das galáxias do CALIFA no diagrama cor magnitude $u-z$ vs. $M_z$. {\em Painel superior}: Em pontos pretos est\~ao as galáxias
+    pertencente a amostra-m\~ae e em cores as galáxias presentes no CALIFA DR1. As diferentes cores representam os diferentes tipos morfológicos.
+    {\em Painel inferior}: A fra\c{c}\~ao de galáxias observadas pelo DR1 em rela\c{c}\~ao a amostra-m\~ae. Retirado de \citet{Husemann2013}.}
     \label{fig:cm-uzMz}
     \end{center}
 \end{figure}
@@ -373,22 +374,24 @@ suficientes para o avanço de nosso projeto.
 \end{figure}
 
 \subsection{\pycasso e \pcalifa}
+
 A sintese espectral de uma galáxia do CALIFA gera um número muito grande de resultados. Cada espectro de entrada para a síntese pertence a uma posição
 determinada ({\em spaxel}\footnote{{\em Spaxel} vem de {\em Spectral pixel}. Um {\em spaxel} é um píxel com três dimensões (x, y, $\lambda$)}) da
 galáxia, resultando assim em para as propriedades físicas e medidas de extinção estelares com dimensão espacial. Para organização desses resultados,
 que necessitam ser armazenadas com as informações originais dos cubos, André L. de Amorim, juntamente com outros colaboradores de nosso grupo e do
-projeto CALIFA, construiu o programa \pycasso ({\em Python CALIFA \starlight Synthesis Organizer}, descrito na sec. de \citet{CidFernandes2013})
-para tal função. Organiza os dados da síntese de populações estelares e demais dados provenientes de outros programas pertencentes ao {\em pipeline}
-do CALIFA. Esses programas fazem a redução, organização dos espectros, máscaras espaciais e espectrais (remoção de objetos espúrios, marcação de {\em
-spaxels} problemáticos), entre outros. O \pycasso facilita muito toda a ciência exploratória nos cubos de espectros do CALIFA. 
+projeto CALIFA, construiu o programa \pycasso ({\em Python CALIFA \starlight Synthesis Organizer}, descrito na sec. 4 de \citet{CidFernandes2013})
+para tal função. O \pycasso organiza os resultados da síntese de populações estelares e demais dados provenientes de outros programas pertencentes ao
+{\em pipeline} do CALIFA. Esses programas fazem a redução dos espectros, definição de máscaras espaciais e espectrais (remoção de objetos espúrios,
+marcação de {\em spaxels} problemáticos), entre outros. Este programa facilita muito toda a ciência exploratória nos cubos de espectros do CALIFA.
 
 Em minha dissertação de mestrado desenvolvemos um programa chamado de \pcalifa, que utiliza o \pycasso como biblioteca e os cubos de espectros do
 CALIFA para o cáculo das componentes principais e dos tomogramas PCA. Encontramos diversas correlações entre a distribuição espacial das componentes e
 os tomogramas PCA. Um exemplo pode ser visto na Figura \ref{fig:K0277corre} onde encontramos a uma ótima correlação entre a idade estelar média
 ponderada pela luz (\meanL{\log\ t}) e o tomograma 01. Essas correlações formam uma certa engenharia reversa no sentido de buscar os parâmetros mais
-``importantes'' em variância (as PCs) que mapeiam propriedades físicas, de uma forma não-paramétrica.
+``importantes'' em variância (as PCs) que mapeiam propriedades físicas, de uma forma não-paramétrica. Os estudos iniciais e exploratórios realizados
+no mestrado devem agora ser retomados de forma mais completa e sistemática no doutorado.
 
-\subsection{Explorando as características de filtragem dos dados com tomografia pca e wavelets}
+\subsection{Explorando as características de filtragem dos dados com tomografia PCA e wavelets}
 
 Utilizando tomografia PCA pode-se reconstruir os espectros originais criando combinações dos elementos da base ortonormal, ordenados pela variância,
 resultante da técnica (componentes principais). O cubo de espectros pode ser reconstruído  ($\mathbf{F}_{z \lambda}^{rec}$) usando os tomogramas
@@ -405,24 +408,12 @@ Transformada {\em Wavelet} Discreta ({\em Discrete wavelet transform} - DWT) jun
 Para cada imagem em determinado comprimento de onda (cada comprimento de onda em um cubo de dados forma uma imagem) aplica-se a DWT e depois a
 tomografica PCA para cada {\em wavelet}, obtendo assim um filtro de características espaciais. Nesse caso os dados são do {\em Gemini Near-infrared
 Integral Field Spectrograph} (NIFS) para a galáxia NGC 591. Os campos de visão do Gemini e do CALIFA são completamente diferentes. Praticamente cada
-elemento de resolução do CALIFA é um campo inteiro do Gemini, fazendo com que nossa análisa seja pioneira para cubo de espectros para galáxias
+elemento de resolução do CALIFA é um campo inteiro do Gemini, fazendo com que nossa análise seja pioneira para cubos de dados abrangendo galáxias
 inteiras. Outras técnicas com medidas de distâncias em espaços multidimensionais, clusterização, entre outras, serão análisadas, a fim de se encontrar
 padrões pertinentes nos dados.
 
 % bibliografia
 \bibliographystyle{apj}
 \bibliography{apj-jour,bibliografia}
-
-%    \pagebreak
-%    \begin{center}    
-%     \rule{7cm}{.5pt}\\
-%          Fábio Rafael Herpich\\
-%     \vspace{3cm}\rule{7cm}{.5pt}\\
-%          Roberto Cid Fernandes\\
-%     \vspace{3cm}\rule{7cm}{.5pt}\\
-%          Abílio Mateus Jr.
-%    \end{center}
-%
-%\includepdf{./documentos/fabio1.pdf}
     
 \end{document}
