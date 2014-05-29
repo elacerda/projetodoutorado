@@ -61,7 +61,8 @@ lmargin=2.5cm,rmargin=2cm,headsep=5mm,footskip=0cm}
 \def\starlightUV{\textsc{starlight+UV}\xspace} %smallcaps Starlight+UV%
 \def\STARLIGHT{\textit{STARLIGHT}\xspace}                %Starlight%
 \def\STARLIGHTUV{\textit{STARLIGHT+UV}\xspace}        %Starlight+UV%
-\def\SDSS{\textit{SDSS}\xspace}           %Sloan Digital Sky Survey%
+%\def\SDSS{\textit{SDSS}\xspace}           %Sloan Digital Sky Survey%
+\def\SDSS{SDSS\xspace}           %Sloan Digital Sky Survey%
 \def\galex{\textit{GALEX}\xspace}
 \def\citneed{\textsuperscript{\bf \textcolor{red}{[citation needed]}}\xspace}
 \def\fixme{\textsuperscript{\bf \textcolor{red}{[FIXME]}}\xspace}
@@ -205,33 +206,32 @@ lmargin=2.5cm,rmargin=2cm,headsep=5mm,footskip=0cm}
 
 \begin{flushleft}
 	Aluno: Eduardo Alberto Duarte Lacerda\\
-	Orientador: Roberto Cid Fernandes(Universidade Federalde Santa Catarina)\\
+	Orientador: Roberto Cid Fernandes (Universidade Federalde Santa Catarina)\\
 	Co-orientador: Rosa M. González Delgado (Instituto de Astrofísica de Andalucía)
 \end{flushleft}
 
 \begin{center}
 	\textbf{Resumo}
 \end{center}
-\paragraph{}\ Coom o avanço das tecnologias na obtenção e armazenamento de dados, os grandes levantamento de informações astronômicas estão sendo
-elevados a um novo patamar na ciência. O Projeto CALIFA vem sendo pioneiro no mapeamento de galáxias utilizando Espectroscopia de Campo Integral
-(IFS), cada uma com um campo de visão de $\sim1.3$ arcmin${}^2$, produzindo cerca de 4000 espectros por galáxia. Devido ao grande número de
-informações que envolvem todo o processo, desde muitos espectros por galáxias até os métodos utilizados para a redução dos dados observacionais, é
-necessário cada vez mais a criação de técnicas e ferramentas mais especializadas. Utilizando o \starlight para a síntese de populações estelares e o
-\pycasso para a organização e análise dos resultados da síntese, desenvolvemos o \pcalifa, um programa em \texttt{python} que aplica a técnica de
-tomografia PCA nos cubos de espectros do CALIFA. Dando continuidade a esse projeto de desenvolvimento de técnicas e ferramentas
-matemático-estatísticas em astrofísica, procuramos aplicar essa análise nos cubos de espectros reduzidos com a nova versão do CALIFA {\em Pipeline}
-(v1.4). Buscamos também novas técnicas (e.g., {\em wavelets}, {\em fourier}, distâncias em diferentes espaços, clusterização), que aliadas a
-tomografia PCA possam nos ajudar na identificação de padrões espaciais e espectrais para finalidades de decomposição e filtragem dos espectros.
+Com o avanço das tecnologias na obtenção e armazenamento de dados, os grandes levantamento de informações astronômicas estão sendo elevados a um novo
+patamar na ciência. O Projeto CALIFA vem sendo pioneiro no mapeamento de galáxias utilizando Espectroscopia de Campo Integral (IFS), cada uma com um
+campo de visão de $\sim1.3$ arcmin${}^2$, produzindo cerca de 4000 espectros por galáxia. Devido ao grande número de informações que envolvem todo o
+processo, desde muitos espectros por galáxias até os métodos utilizados para a redução dos dados observacionais, é necessário cada vez mais a criação
+de técnicas e ferramentas mais especializadas. Utilizando o \starlight para a síntese de populações estelares e o \pycasso para a organização e
+análise dos resultados da síntese, desenvolvemos o \pcalifa, um programa em \texttt{python} que aplica a técnica de tomografia PCA nos cubos de
+espectros do CALIFA. Dando continuidade a esse projeto de desenvolvimento de técnicas e ferramentas matemático-estatísticas em astrofísica, procuramos
+aplicar essa análise nos cubos de espectros reduzidos com a nova versão do CALIFA {\em Pipeline} (v1.4). Buscamos também novas técnicas (e.g., {\em
+wavelets}, {\em fourier}, distâncias em diferentes espaços, clusterização), que aliadas a tomografia PCA possam nos ajudar na identificação de padrões
+espaciais e espectrais para finalidades de decomposição e filtragem dos espectros.
 	
 \section{Introdução}
 Hoje temos disponível uma enorme quantidade de informações sobre nosso Universo através dos grandes levantamentos astronômicos. Esses {\em surveys},
 que são mapeamentos de regiões do céu utilizando telescópios com diversas tecnologias diferentes, produziram e seguem produzindo quantidades de dados
 antes inimagináveis, servindo como base para toda a ciência em astrofísica. Nos últimos 15 anos entramos numa era de {\em mega-surveys}, iniciada com
 projetos como a \SDSS \citep{York2000}, 2dFGRS \citep{Colless1999} e 2MASS \citep{Skrutskie2006}, e que seguirá com projetos como o LSST
-\citep[LSST;][]{Ivezic2008}, JPAS [POR REF DO WHITE PAPER NO ASTROPH EM 2014]. Esse crescimento exponencial na quantidade de dados faz com que
-precisemos cada vez mais de ferramentas matemáticas/estatísticas para análise dos dados, e é nessa direção que esse projeto se enquadra.
+\citep{Ivezic2008} e JPAS \citep{JPAS2014}. Esse crescimento exponencial na quantidade de dados faz com que precisemos cada vez mais de ferramentas
+matemáticas/estatísticas para análise dos dados, e é nessa direção que esse projeto se enquadra.ss
 	
-
 Ferramentas clássicas de análise em astrofísica buscam reproduzir os dados segundo algum modelo, e desse resultado extrair informações de valor
 físico. Um exemplo é o código \starlight, desenvolvido por \citet{CidFernandes2005}, que decompõe um espectro observado de uma galáxia (dados) em
 termos de populações estelares de distintas idades e metalicidades (modelos) em um processo conhecido como síntese espectral. A aplicação desse método
@@ -284,8 +284,7 @@ pelo {\em Baryon Oscillation Spectroscopic Survey} \citep[BOSS;][]{Ahn2012}, atr
 \begin{figure}
 	\begin{center}
     \includegraphics[height=1.\textwidth]{figuras/K0119-compv13v14-atflux_av.pdf}
-    \caption[]
-    {{\em Painel superior}: Imagem \SDSS para a galáxia NGC1167 (CALIFA 119), {\em Hubble-type}, massa em estrelas e
+    \caption{{\em Painel superior}: Imagem \SDSS para a galáxia NGC1167 (CALIFA 119), {\em Hubble-type}, massa em estrelas e
     {\em redshift}. {\em Painéis do meio}: Comparação entre os valores para idade estelar média ponderada pela luz (\meanL{\log\ t}) obtidos pelo
     \starlight utilizando os cubos de dados reduzidos com a versão 1.3c ({\em esquerda}) e 1.4a ({\em direita}). {\em Painéis inferiores}: O mesmo
     dos painéis do meio, mas para a extinção estelar ($A_V^\star$)}
@@ -332,7 +331,7 @@ padrões tanto em dimensão espectral, quanto espacial. Pretendemos:
 Através de nossa parceria com os pesquisados do IAA, na Espanha, possuimos um ambiente perfeito para o desenvolvimento desse projeto. Descrevemos aqui
 nossa metodologia proposta para tal fim.
 
-\subsection{O projeto CALIFA}
+\subsection{O projeto CALIFA e o Instituto de Astrofísica de Andalucía}
 
 O CALIFA foi concebido para que seu legado seja abrangente, possibilitando diversos tipos de estudos em diversas áreas. Para esta finalidades, está
 observando $\sim 600$ galáxias com um campo de visão de $\sim1.3$ arcmin$^2$ em duas configurações que cobrem a janela espectral de 3650-7000 \AA. Sua
